@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+        <!-- Bootstrap Core Css -->
+        <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Waves Effect Css -->
+        <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+        <!-- Animation Css -->
+        <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+        <!-- Morris Chart Css-->
+        <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+
+        <!-- Custom Css -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+        <link href="css/themes/all-themes.css" rel="stylesheet" />
+        <title>Roscas</title>
+    </head>
+    <body class="theme-green">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div class="nav navbar-nav navbar-right">
+                    <a class=" navbar-right navbrandimg bg-light-blue collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" >
+                        <span><strong>T </strong> </span>
+                    </a>
+
+                    <a href="menu.html" class="navbrandIco"> <i class=" col-white font-40 material-icons">home</i> </a>
+
+                </div>
+                <!--<a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>-->
+
+
+
+                <!--<span class="navbrand" >ROSCAS</span>-->
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">person</i>
+                            <span id="nome_tecnico"> Técnico</span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Grupos</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="index.html"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h4 class="text-center">Grupo <strong><span id="nome_grupo"></span></strong></h4>
+            </div>
+
+            <!-- Widgets -->
+            <div class="row clearfix">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menudetalhesGrupo">
+                    <div class="info-box bg-green hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">dashboard</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Detalhes</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menunovomebro_futuro">
+                        <div class="info-box bg-grey hover-expand-effect">
+                            <div class="icon">
+                                <i class="material-icons">person_add</i>
+                            </div>
+                            <div class="content">
+                                <div class="text"></div>
+                                <div class="number " >Novo membro</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menucontribuicao_futuro" >
+                        <div class="info-box bg-grey hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">attach_money</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Contribuições</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menuemprestimo_futuro" >
+                        <div class="info-box bg-grey hover-expand-effect">
+                            <div class="icon">
+                                <i class="material-icons">attach_money</i>
+                            </div>
+                            <div class="content">
+                                <div class="text"></div>
+                                <div class="number " >Emprestimos</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menumultas_futuro" >
+                    <div class="info-box bg-grey hover-expand-effect">
+
+                        <div class="icon">
+                            <i class="material-icons">description</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Multas</div>
+                        </div>
+
+                    </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-xs-12  col-md-6 m-b-25">
+                    <a href="tabelaGrupo.html" class="btn btn-block bg-light-green  waves-effect">
+                        <i class="material-icons">home</i>
+                        <span>Voltar</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- #END# Widgets -->
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="plugins/flot-charts/jquery.flot.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+    <script src="js/roscas/config.js"></script>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        $.ajax({
+            type: 'POST', //Or 'GET',
+            url: ip+"php/controller/pesquisar/dadosTecnico.php",
+            success: function (data) {
+
+                var result = JSON.parse(data);
+
+                var nome = result.nome_tecnico;
+                var email = result.email_tecnico;
+
+
+                $('#nome_tecnico').text(nome);
+                $('#email_tecnico').text(email);
+
+
+                return false;
+            },
+            error: function () {
+
+                alert("ocorreu um erro");
+
+                return false;
+            }
+        });
+
+
+
+        $.ajax({
+            type: 'POST', //Or 'GET',
+            url: ip+"php/controller/pesquisar/dadosTecnico.php",
+            success: function (data) {
+
+                var result = JSON.parse(data);
+
+                var nome = result.nome_tecnico;
+                var email = result.email_tecnico;
+
+
+                $('#nome_tecnico').text(nome);
+                $('#email_tecnico').text(email);
+
+
+                return false;
+            },
+            error: function () {
+
+                alert("ocorreu um erro");
+
+                return false;
+            }
+        });
+
+        var grupo = getUrlParameter('token');
+
+        $.ajax({
+            type: 'POST', //Or 'GET',
+            url: ip+"php/controller/pesquisar/dadosGrupo.php?token="+grupo,
+            success: function (data) {
+
+                var result = JSON.parse(data);
+
+                var nome_grupo = result.grupo_nome;
+
+
+                $('#nome_grupo').text(nome_grupo);
+
+
+                return false;
+            },
+            error: function () {
+
+                alert("ocorreu um erro");
+
+                return false;
+            }
+        });
+      
+        var url_menudetalhesGrupo = 'detalhesDoGrupo.html?token=' + grupo;
+
+        $('#menudetalhesGrupo').attr("href", url_menudetalhesGrupo);
+
+        var url_menunovomebro = 'tabelaAdicionarMembro.html?token='+grupo;
+
+        $('#menunovomebro').attr("href",url_menunovomebro);
+
+        var url_menucontribuicao = 'contribuicoes.html?token='+grupo;
+
+        $('#menucontribuicao').attr("href", url_menucontribuicao);
+
+
+    </script>
+    </body>
+</html>

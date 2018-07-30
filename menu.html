@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+        <!-- Bootstrap Core Css -->
+        <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Waves Effect Css -->
+        <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+        <!-- Animation Css -->
+        <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+        <!-- Morris Chart Css-->
+        <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+
+        <!-- Custom Css -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+        <link href="css/themes/all-themes.css" rel="stylesheet" />
+        <title>Roscas</title>
+    </head>
+    <body class="theme-green">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+              <div class="nav navbar-nav navbar-right">
+                    <a class=" navbar-right navbrandimg bg-light-blue collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" >
+                        <span><strong>T </strong> </span>
+                    </a>
+
+                  <a href="menu.html" class="navbrandIco"> <i class=" col-white font-40 material-icons">home</i> </a>
+
+              </div>
+                <!--<a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>-->
+
+
+
+                <!--<span class="navbrand" >ROSCAS</span>-->
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">person</i>
+                            <span id="nome_tecnico"> Técnico</span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Grupos</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="index.html"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <!--<section>-->
+        <!--&lt;!&ndash; Left Sidebar &ndash;&gt;-->
+        <!--<aside id="leftsidebar" class="sidebar">-->
+            <!--&lt;!&ndash; User Info &ndash;&gt;-->
+            <!--<div class="user-info">-->
+                <!--<div class="image">-->
+                    <!--<img src="images/user.png" width="48" height="48" alt="User" />-->
+                <!--</div>-->
+                <!--<div class="info-container">-->
+                    <!--<div class="name"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nome_tecnico">Técnico</span></div>-->
+                    <!--<div class="email" ><span id="email_tecnico">tecnico@example.com</span></div>-->
+                    <!--<div class="btn-group user-helper-dropdown">-->
+                        <!--<i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>-->
+                        <!--<ul class="dropdown-menu pull-right">-->
+                            <!--<li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="javascript:void(0);"><i class="material-icons">group</i>Grupos</a></li>-->
+                            <!--<li role="separator" class="divider"></li>-->
+                            <!--<li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; #User Info &ndash;&gt;-->
+
+            <!--&lt;!&ndash; #Menu &ndash;&gt;-->
+
+            <!--<div class="menu">-->
+                <!--<ul class="list">-->
+                    <!--<li class="header">Menu Inicial</li>-->
+
+
+                    <!--<li class="">-->
+                        <!--<a href="cadastroMembro.html">-->
+                            <!--<i class="material-icons">person_add</i>-->
+                            <!--<span>Cadastro</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+
+                     <!--<li class="">-->
+                        <!--<a href="cadastroGrupo.html">-->
+                            <!--<i class="material-icons">group_add</i>-->
+                            <!--<span>Criar Grupo</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+
+                     <!--<li class="">-->
+                        <!--<a href="tabelaGrupo.html">-->
+                            <!--<i class="material-icons">group</i>-->
+                            <!--<span>Gerir Grupo</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+
+                    <!--<li class="">-->
+                        <!--<a href="#">-->
+                            <!--<i class="material-icons">tune</i>-->
+                            <!--<span>Regras</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+
+                    <!--<li class="">-->
+                        <!--<a href="#">-->
+                            <!--<i class="material-icons">settings</i>-->
+                            <!--<span>Definições</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+
+
+
+                <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; Footer &ndash;&gt;-->
+            <!--<div class="legal">-->
+                <!--<div class="copyright">-->
+                    <!--&copy; 2018 <a href="javascript:void(0);">Roscas</a>.-->
+                <!--</div>-->
+                <!--<div class="version">-->
+                    <!--<b>Version: </b> 1.0.0-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; #Footer &ndash;&gt;-->
+        <!--</aside>-->
+        <!--&lt;!&ndash; #END# Left Sidebar &ndash;&gt;-->
+        <!--&lt;!&ndash; Right Sidebar &ndash;&gt;-->
+             <!--&lt;!&ndash; #END# Right Sidebar &ndash;&gt;-->
+    <!--</section>-->
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h4 class="text-center"> <strong>Menu </strong></h4>
+            </div>
+
+            <!-- Widgets -->
+            <div class="row clearfix">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " id="menuCadastrarMembro">
+                    <div class="info-box bg-green hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">person_add</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Cadastro</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " href="cadastroGrupo.html">
+                    <div class="info-box bg-green hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">group_add</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Criar Grupo</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " href="tabelaGrupo.html">
+                    <div class="info-box bg-green hover-expand-effect">
+
+                        <div class="icon">
+                            <i class="material-icons">group</i>
+                        </div>
+                        <div class="content">
+                            <div class="text"></div>
+                            <div class="number " >Gerir Grupo</div>
+                        </div>
+
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <a class="  " href="#">
+                        <div class="info-box bg-grey hover-expand-effect">
+                            <div class="icon">
+                                <i class="material-icons">tune</i>
+                            </div>
+                            <div class="content">
+                                <div class="text"></div>
+                                <div class="number " >Regras</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 disabled">
+                    <a class="  " href="#">
+                        <div class="info-box bg-grey hover-expand-effect">
+                            <div class="icon">
+                                <i class="material-icons">settings</i>
+                            </div>
+                            <div class="content">
+                                <div class="text"></div>
+                                <div class="number " >Definições</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12  col-md-6 m-b-25">
+                    <a href="index.html" class="btn btn-block bg-light-green  waves-effect">
+                        <i class="material-icons">exit_to_app</i>
+                        <span>Sair</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- #END# Widgets -->
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="plugins/flot-charts/jquery.flot.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+
+    <script src="js/roscas/config.js"></script>
+    <script>
+
+
+
+        $.ajax({
+            type: 'POST', //Or 'GET',
+            url: ip+"php/controller/pesquisar/dadosTecnico.php",
+            success: function (data) {
+
+                var result = JSON.parse(data);
+
+                var nome = result.nome_tecnico;
+                var email = result.email_tecnico;
+
+
+                $('#nome_tecnico').text(nome);
+                $('#email_tecnico').text(email);
+
+
+                return false;
+            },
+            error: function () {
+
+                alert("ocorreu um erro");
+
+                return false;
+            }
+        });
+
+        $('#menuCadastrarMembro').on('click', function () {
+
+            $.ajax({
+                type: 'POST', //Or 'GET',
+                url: ip+"php/controller/pesquisar/actividades.php",
+                success: function (data) {
+
+                    var $htmloption  = data.trim();
+
+                    var url_menuCadastrarMembro = 'cadastroMembro.html?token=' + $htmloption;
+
+                    window.location.href=url_menuCadastrarMembro;
+
+                    return false;
+                },
+                error: function () {
+
+                    alert("ocorreu um erro");
+
+                    return false;
+                }
+            });
+
+        });
+
+
+    </script>
+
+
+    </body>
+</html>
